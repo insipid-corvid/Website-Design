@@ -19,32 +19,43 @@
          </div>
          <div>
             <h2>Preferences</h2>
-            <label for="vehicle_type">Vehicle Type:</label>
-            <input type="radio" id="vehicle_type"name="vehicle_type"><br>
+            Vehicle Type:
+            <label for="sedan">Sedan:</label>
+            <input type="radio" id="sedan"name="vehicle_type" value="sedan">
+
+            <label for="truck">Truck:</label>
+            <input type="radio" id="truck"name="vehicle_type" value="truck">
+
+            <label for="sports_car">Sports Car:</label>
+            <input type="radio" id="sports_car"name="vehicle_type" value="sports_car">
+
+            <label for="minivan">Minivan:</label>
+            <input type="radio" id="minivan"name="vehicle_type" value="minivan"> <br>
+
+
+
+            <label for="convertible">Convertible</label>
+            <input type="checkbox" id="convertible" name="convertible"><br>
+
+            <label for="colour">Colour</label>
+            <select name="colour" id="colour">
+                <option label="Blue"value="Blue"> </option>
+                <option label="Red"value="Red"> </option>
+                <option label="Green"value="Green"> </option>
+                <option label="Silver"value="Silver"> </option>
+                <option label="White"value="White"> </option>
+            </select>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div>
 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required><br>
 
-
-
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" placeholder="123-456-7890" required>
     </div>
 
 
