@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Reservation Request</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+    
+    <h1>Vehicle Reservation Request</h1>
+    <form id="form" action="response.html" method="GET" name="reservation_form" id="reservation_form">
+        <fieldset>
+                <legend>General Information</legend>
+                    <label for="pickup_date">Pickup Date:</label>
+                    <input type="text" id="pickup_date"name="pickup_date" placeholder="dd-mm-yyyy">
+                    <span>*</span> <br>
+            </div>    
+                <label for="day_count">No. of days:</label>
+                <input type="number" min="1" id="day_count"name="day_count">
+                <span>*</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            
+                <label>Vehicle Type:</label>
+                <input type="radio" id="sedan"name="vehicle_type" value="sedan" class="left" checked>Sedan
+                <input type="radio" id="truck"name="vehicle_type" value="truck" class=left>Truck
+                <input type="radio" id="sports_car"name="vehicle_type" value="sports_car" class="left">Sports Car
+                <input type="radio" id="minivan"name="vehicle_type" value="minivan" class="left last">Minivan <br>
+            </div>
+            <div>
+                <label>Engine Type:</label>
+                <input type="radio" id="ev" name="engine_type" value="ev" class="left" checked>EV
+                <input type="radio" id="gas" name="engine_type" value="gas" class="left">Gas
+                <input type="radio" id="hybrid" name="engine_type" value="hybrid" class="left last">Hybrid <br>
+            </div>
+                <label>Colour:</label>
+                <select name="colour" id="colour">
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="silver">Silver</option>
+                    <option value="white">White</option>
+                </select> <br>
+            </div>
+                <input type="checkbox" id="convertible" name="convertible">Convertible<br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span>*</span><br>
+
+            </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span>*</span><br>
+
+            </div>
+                <label for="phone_number">Phone:</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="123-456-7890">
+                <span>*</span>
+
+            </div>
+        </fieldset>
+
+        <button type="submit" id="submit" value="submit">Submit Request</button>
+        <button type="reset">Clear Form</button>
+    </form>
+    <small>&copy; "TravisKeating/8889965" 2023</small>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script defer src="reservation.js"></script>
+</body>
+</html>
