@@ -21,7 +21,7 @@ $(document).ready( () => {
 	form.addEventListener('submit', (e) => {
 		e.preventDefault()
 		
-		console.log('here');
+		console.log('here test');
 		checkInputs();
 	});
 
