@@ -11,6 +11,10 @@ h1 {
     color: orange;
 }
 
+p {
+    color:red
+}
+
 legend {
     color: orange;
     font-weight: bold;

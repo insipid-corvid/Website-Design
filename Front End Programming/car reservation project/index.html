@@ -16,11 +16,13 @@
                 <legend>General Information</legend>
                     <label for="pickup_date">Pickup Date:</label>
                     <input type="text" id="pickup_date"name="pickup_date" placeholder="dd-mm-yyyy">
-                    <span>*</span> <br>
+                    <span>*</span>
+                    <span id="pickup_error"></span><br>
             </div>    
                 <label for="day_count">No. of days:</label>
-                <input type="number" min="1" id="day_count"name="day_count">
-                <span>*</span>
+                <input type="text" min="1" id="day_count"name="day_count">
+                <span>* </span>
+                <span id="day_count_error"></span>
             </div>
         </fieldset>
         <fieldset>
@@ -54,17 +56,20 @@
             <legend>Contact Information</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
-                <span>*</span><br>
+                <span>*</span>
+                <span id="name_error"></span><br>
 
             </div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <span>*</span><br>
+                <input type="text" id="email" name="email">
+                <span>*</span>
+                <span id="email_error"></span><br>
 
             </div>
                 <label for="phone_number">Phone:</label>
                 <input type="tel" id="phone_number" name="phone_number" placeholder="123-456-7890">
                 <span>*</span>
+                <span id="phone_error"></span>
 
             </div>
         </fieldset>
