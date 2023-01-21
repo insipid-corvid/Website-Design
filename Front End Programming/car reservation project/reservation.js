@@ -30,6 +30,13 @@ $(document).ready(() => {
       let email_value = email.value.trim();
       let phone_value = phone.value.trim();
 
+      //writes the trimmed input back into the text field
+      document.getElementById("pickup_date").value = pickup_date_value;
+      document.getElementById("day_count").value = days_value;
+      document.getElementById("name").value = name_value;
+      document.getElementById("email").value = email_value;
+      document.getElementById("phone_number").value = phone_value;
+
       //converts the day value into a number
       let days_value_parsed = parseInt(days_value, 10);
 
