@@ -1,0 +1,31 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  margin: 0 auto;
+  border: 3px solid blueviolet;
+  width: 600px;
+  padding: 0 2em 1em;
+}
+
+div {
+  margin-bottom: 1em;
+}
+
+label {
+  text-align: right;
+  display: inline-block;
+  width: 10em;
+}
+
+input {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+h1 {
+  color: darkcyan;
+}
+
+span {
+  color: crimson;
+}
