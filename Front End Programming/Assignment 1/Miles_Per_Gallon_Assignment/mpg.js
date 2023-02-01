@@ -1,18 +1,18 @@
 "use strict";
 
-const checker = (selector) => document.querySelector(selector);
+const c = (selector) => document.querySelector(selector);
 
 const getError = (lbl) => `${lbl} must be a valid number greater than zero`;
 
 const selectAndFocus = (selector) => {
-  const elem = checker(selector);
+  const elem = c(selector);
   elem.focus();
   elem.select();
 };
 
 const processEntries = () => {
-  const miles = parseFloat(checker("#miles").value);
-  const gallons = parseFloat(checker("#gallons").value);
+  const miles = parseFloat(c("#miles").value);
+  const gallons = parseFloat(c("#gallons").value);
 
   if (isNaN(miles) || miles <= 0) {
     alert(getError("Miles driven"));
@@ -20,28 +20,28 @@ const processEntries = () => {
   } else if (isNaN(gallons) || gallons <= 0) {
     alert(getError("Gallons used"));
   } else {
-    checker("#mpg").value = (miles / gallons).toFixed(2);
+    c("#mpg").value = (miles / gallons).toFixed(2);
   }
 };
 
-var clearEntries = () => {
-  checker("#miles").value = "";
-  checker("#gallons").value = "";
-  checker("#mpg").value = "";
+let clearEntries = () => {
+  c("#miles").value = "";
+  c("#gallons").value = "";
+  c("#mpg").value = "";
 };
 
-var clearMiles = () => {
-  checker("#miles").value = "";
+let clearMiles = () => {
+  c("#miles").value = "";
 };
 
-var clearGallons = () => {
-  checker("#gallons").value = "";
+let clearGallons = () => {
+  c("#gallons").value = "";
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  checker("#submit").addEventListener("click", processEntries);
-  checker("#mpg").addEventListener("dblclick", clearEntries);
-  checker("#miles").focus();
-  checker("#miles").addEventListener("focus", clearMiles);
-  checker("#gallons").addEventListener("focus", clearGallons);
+  c("#submit").addEventListener("click", processEntries);
+  c("#mpg").addEventListener("dblclick", clearEntries);
+  c("#miles").focus();
+  c("#miles").addEventListener("focus", clearMiles);
+  c("#gallons").addEventListener("focus", clearGallons);
 });
